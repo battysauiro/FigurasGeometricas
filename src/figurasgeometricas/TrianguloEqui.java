@@ -2,7 +2,7 @@ package figurasgeometricas;
 
 
 
-import PerimetroFIguras.CalPerimetroTriaEqui;
+import PerimetroFIguras.CalPerimetroLineal;
 import figurasgeometricas.AreaFiguras.CalAreaTrian;
 
 /**
@@ -14,7 +14,7 @@ public class TrianguloEqui extends FiguraGeometrica{
     public TrianguloEqui(double lado_1, double lado_2) {
         super(lado_1, lado_2);
         calArea=new CalAreaTrian();
-        calPerimetro=new CalPerimetroTriaEqui();
+        calPerimetro=new CalPerimetroLineal();
 
     }
 

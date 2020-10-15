@@ -5,6 +5,7 @@
  */
 package figurasgeometricas;
 
+import PerimetroFIguras.CalPerimetroLineal;
 import figurasgeometricas.AreaFiguras.CalAreaTrian;
 
 /**
@@ -16,7 +17,7 @@ public class RomboRegular extends FiguraGeometrica{
     public RomboRegular(double lado_1, double lado_2) {
         super(lado_1, lado_2);
         calArea=new CalAreaTrian();
-        
+        calPerimetro= new CalPerimetroLineal();
     }
 
     @Override
