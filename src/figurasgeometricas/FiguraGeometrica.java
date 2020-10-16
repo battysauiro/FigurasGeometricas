@@ -16,7 +16,7 @@ import figurasgeometricas.AreaFiguras.FormaCalArea;
 public abstract class FiguraGeometrica {
     protected double lado_1;
     protected double lado_2;
-    protected double dimensiones[];
+    protected double dimensiones[];//guardara todos los lados de cada figura 
     protected Punto ubicacion;
     protected FormaCalArea calArea;
     protected FormaCalPerimetro calPerimetro;

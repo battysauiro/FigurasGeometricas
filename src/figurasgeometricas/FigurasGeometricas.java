@@ -7,7 +7,7 @@ package figurasgeometricas;
 
 /**
  *
- * @author Oscar
+ * @author Oscar Aragon  Garcia 
  */
 public class FigurasGeometricas {
 
@@ -19,7 +19,8 @@ public class FigurasGeometricas {
         Punto p=new Punto();
         p.setX(4);
         p.setY(5);
-        double ladosRec[]={4,6,4,6};
+        double ladosRec[]={4,6,4,6};// arreglo que contendra los lados de la figura 
+        
         FiguraGeometrica rec= new Rectangulo(4,6,ladosRec);
         rec.ubicacion=p;
         
