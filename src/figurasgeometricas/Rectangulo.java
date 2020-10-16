@@ -5,7 +5,7 @@
  */
 package figurasgeometricas;
 
-import PerimetroFIguras.CalPerimetroPara;
+import PerimetroFIguras.CalPerimetroLineal;
 import figurasgeometricas.AreaFiguras.CalAreaPara;
 
 /**
@@ -14,10 +14,10 @@ import figurasgeometricas.AreaFiguras.CalAreaPara;
  */
 public class  Rectangulo extends FiguraGeometrica{
 
-    public Rectangulo(double lado_1, double lado_2) {
-        super(lado_1, lado_2);
+    public Rectangulo(double lado_1, double lado_2,double dimensiones[]) {
+        super(lado_1, lado_2,dimensiones);
         calArea=new CalAreaPara();
-        calPerimetro=new CalPerimetroPara();
+        calPerimetro=new CalPerimetroLineal();
 
     }
 

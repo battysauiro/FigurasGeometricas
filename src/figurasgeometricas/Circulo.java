@@ -16,8 +16,8 @@ import figurasgeometricas.AreaFiguras.CalAreaElipse;
  */
 public class Circulo extends FiguraGeometrica{
 
-    public Circulo(double lado_1, double lado_2) {
-        super(lado_1, lado_2);
+    public Circulo(double lado_1, double lado_2,double dimensiones[]) {
+        super(lado_1, lado_2,dimensiones);
         calArea=new CalAreaElipse();
         calPerimetro=new CalPerimetroCirculo();
     }

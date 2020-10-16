@@ -5,7 +5,7 @@
  */
 package figurasgeometricas;
 
-import PerimetroFIguras.CalPerimetroElipse;
+import PerimetroFIguras.CalPerimetroCirculo;
 import figurasgeometricas.AreaFiguras.CalAreaElipse;
 
 /**
@@ -14,10 +14,10 @@ import figurasgeometricas.AreaFiguras.CalAreaElipse;
  */
 public class Elipse extends FiguraGeometrica{
 
-    public Elipse(double lado_1, double lado_2) {
-        super(lado_1, lado_2);
+    public Elipse(double lado_1, double lado_2,double dimensiones[]) {
+        super(lado_1, lado_2,dimensiones);
         calArea= new CalAreaElipse();
-        calPerimetro=new CalPerimetroElipse();
+        calPerimetro=new CalPerimetroCirculo();
 
     }
 

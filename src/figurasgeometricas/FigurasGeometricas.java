@@ -19,7 +19,8 @@ public class FigurasGeometricas {
         Punto p=new Punto();
         p.setX(4);
         p.setY(5);
-        FiguraGeometrica rec= new Rectangulo(4,6);
+        double ladosRec[]={4,6,4,6};
+        FiguraGeometrica rec= new Rectangulo(4,6,ladosRec);
         rec.ubicacion=p;
         
         rec.trasladar(p);
@@ -34,7 +35,8 @@ public class FigurasGeometricas {
         Punto p2=new Punto();
         p2.setX(1);
         p2.setY(7);
-        FiguraGeometrica cir= new Circulo(3,3);
+        double ladosCir[]={3,3};
+        FiguraGeometrica cir= new Circulo(3,3,ladosCir);
         cir.ubicacion=p;
         cir.trasladar(p);
         //cir.setLado1(3);
@@ -47,7 +49,8 @@ public class FigurasGeometricas {
         Punto p3=new Punto();
         p3.setX(12);
         p3.setY(6);
-        FiguraGeometrica tri= new TrianguloEqui(5,4);
+        double ladosTriEqui[]={5,5,5};
+        FiguraGeometrica tri= new TrianguloEqui(5,4.33,ladosTriEqui);
         tri.ubicacion=p3;
         tri.trasladar(p3);
         //tri.setLado1(5);
@@ -60,7 +63,8 @@ public class FigurasGeometricas {
         Punto p4=new Punto();
         p4.setX(3);
         p4.setY(1);
-        FiguraGeometrica triRec= new TrianguloRec(3,4);
+        double ladosTriRec[]={5,4,3};
+        FiguraGeometrica triRec= new TrianguloRec(3,4,ladosTriRec);
         triRec.ubicacion=p4;
         triRec.trasladar(p4);
         //tri.setLado1(5);
@@ -74,7 +78,8 @@ public class FigurasGeometricas {
         Punto p5=new Punto();
         p5.setX(3);
         p5.setY(1);
-        FiguraGeometrica cuadrado= new Cuadrado(5,5);
+        double ladosCua[]={5,5,5,5};
+        FiguraGeometrica cuadrado= new Cuadrado(5,5,ladosCua);
         cuadrado.ubicacion=p5;
         cuadrado.trasladar(p5);
         System.out.println("area: "+cuadrado.CalculoArea());
@@ -86,7 +91,8 @@ public class FigurasGeometricas {
         Punto p6=new Punto();
         p6.setX(4);
         p6.setY(7);
-        FiguraGeometrica paralelogramo= new Paralelogramo(4,2);
+        double ladosPara[]={5,4,5,4};
+        FiguraGeometrica paralelogramo= new Paralelogramo(5,4,ladosPara);
         paralelogramo.ubicacion=p6;
         paralelogramo.trasladar(p6);
         System.out.println("area: "+paralelogramo.CalculoArea());
@@ -98,7 +104,8 @@ public class FigurasGeometricas {
         Punto p7=new Punto();
         p7.setX(4);
         p7.setY(14);
-        FiguraGeometrica elipse= new Elipse(3,2);
+        double ladosParale[]={3,2};
+        FiguraGeometrica elipse= new Elipse(3,2,ladosParale);
         elipse.ubicacion=p7;
         elipse.trasladar(p7);
         System.out.println("area: "+elipse.CalculoArea());
@@ -110,15 +117,16 @@ public class FigurasGeometricas {
         
         p7.setX(4);
         p7.setY(14);
-        FiguraGeometrica rombo= new RomboRegular(3,2);
+        double ladosRombo[]={5,5,5,5};
+        FiguraGeometrica rombo= new RomboRegular(8,6,ladosRombo);
         rombo.ubicacion=p7;
         rombo.trasladar(p7);
         System.out.println("area: "+rombo.CalculoArea());
-        //System.out.println("perimetro: "+rombo.CalculoPerimetro());
+        System.out.println("perimetro: "+rombo.CalculoPerimetro());
         elipse.mostrar();
         
     }
-    
+   
 }
 
 

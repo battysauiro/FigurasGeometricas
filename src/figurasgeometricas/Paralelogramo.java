@@ -5,7 +5,7 @@
  */
 package figurasgeometricas;
 
-import PerimetroFIguras.CalPerimetroPara;
+import PerimetroFIguras.CalPerimetroLineal;
 import figurasgeometricas.AreaFiguras.CalAreaPara;
 
 /**
@@ -14,10 +14,10 @@ import figurasgeometricas.AreaFiguras.CalAreaPara;
  */
 public class Paralelogramo extends FiguraGeometrica{
 
-    public Paralelogramo(double d, double d1) {
-        super(d, d1);
+    public Paralelogramo(double d, double d1,double dimensiones[]) {
+        super(d, d1,dimensiones);
         calArea=new CalAreaPara();
-        calPerimetro=new CalPerimetroPara();
+        calPerimetro=new CalPerimetroLineal();
 
     }
 

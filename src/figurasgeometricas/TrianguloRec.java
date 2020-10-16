@@ -1,7 +1,7 @@
 package figurasgeometricas;
 
 
-import PerimetroFIguras.CalPerimetroTriaRectangulo;
+import PerimetroFIguras.CalPerimetroLineal;
 import figurasgeometricas.AreaFiguras.CalAreaTrian;
 
 /*
@@ -12,10 +12,10 @@ import figurasgeometricas.AreaFiguras.CalAreaTrian;
 public class TrianguloRec extends FiguraGeometrica{
     
 
-    public TrianguloRec(double lado_1, double lado_2) {
-        super(lado_1, lado_2);
+    public TrianguloRec(double lado_1, double lado_2,double dimensiones[]) {
+        super(lado_1, lado_2,dimensiones);
         calArea=new CalAreaTrian();
-        calPerimetro=new CalPerimetroTriaRectangulo();
+        calPerimetro=new CalPerimetroLineal();
 
     }
     @Override

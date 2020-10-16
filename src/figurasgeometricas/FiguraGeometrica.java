@@ -20,9 +20,10 @@ public abstract class FiguraGeometrica {
     protected Punto ubicacion;
     protected FormaCalArea calArea;
     protected FormaCalPerimetro calPerimetro;
-    public FiguraGeometrica(double lado_1,double lado_2){
+    public FiguraGeometrica(double lado_1,double lado_2,double dimensiones[]){
         this.lado_1=lado_1;
         this.lado_2=lado_2;
+        this.dimensiones=dimensiones;
         
     }
     public abstract double getLado1();
