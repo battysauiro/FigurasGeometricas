@@ -18,7 +18,6 @@ public class RomboRegular extends FiguraGeometrica{
         super(lado_1, lado_2,dimensiones);
         calArea=new CalAreaTrian();
         calPerimetro= new CalPerimetroLineal();
-        
     }
 
     @Override

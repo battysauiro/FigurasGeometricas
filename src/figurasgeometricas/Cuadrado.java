@@ -5,6 +5,8 @@
  */
 package figurasgeometricas;
 
+import PerimetroFIguras.CalPerimetroLineal;
+
 
 import PerimetroFIguras.CalPerimetroLineal;
 import figurasgeometricas.AreaFiguras.CalAreaPara;
