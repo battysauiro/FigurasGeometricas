@@ -12,8 +12,8 @@ package figurasgeometricas.AreaFiguras;
 public class CalAreaPara implements FormaCalArea{
 
     @Override
-    public double area(double lado1, double lado2) {
-        return lado1*lado2;
+    public double area(double arre[]) {
+        return arre[0]*arre[1];
     }
     
 }

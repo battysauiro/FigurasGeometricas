@@ -9,6 +9,12 @@ package figurasgeometricas.AreaFiguras;
  *
  * @author Oscar
  */
-public interface FormaCalArea {
-    double area(double arre[]);
+public class CalAreaPoligonosRegulares implements FormaCalArea{
+
+    @Override
+    public double area(double arre[]) {
+        
+        return (((arre[1]*(arre[0]*(arre.length-2))))/2);
+    }
+    
 }

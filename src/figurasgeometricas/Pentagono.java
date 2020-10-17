@@ -6,17 +6,19 @@
 package figurasgeometricas;
 
 import PerimetroFIguras.CalPerimetroLineal;
-import figurasgeometricas.AreaFiguras.CalAreaPara;
+import figurasgeometricas.AreaFiguras.CalAreaPoligonosRegulares;
 
 /**
  *
  * @author Oscar
  */
-public class Paralelogramo extends FiguraGeometrica{
+public class Pentagono extends FiguraGeometrica {
 
-    public Paralelogramo(double dimensiones[]) {
+    
+
+    public Pentagono(double dimensiones[]) {
         super(dimensiones);
-        calArea=new CalAreaPara();
+        calArea=new CalAreaPoligonosRegulares();
         calPerimetro=new CalPerimetroLineal();
 
     }
@@ -65,7 +67,10 @@ public class Paralelogramo extends FiguraGeometrica{
 
     @Override
     public void mostrar() {
-        System.out.println("Paralelogramo "+"lado: "+lado_1+" lado 2 "+lado_2+" posicion("+ubicacion.getX()+","+ubicacion.getY()+")"); 
+        System.out.println("pentagono "+"lado: "+lado_1+" lado 2 "+lado_2+" posicion("+ubicacion.getX()+","+ubicacion.getY()+")"); 
     }    
+
+   
+    
     
 }

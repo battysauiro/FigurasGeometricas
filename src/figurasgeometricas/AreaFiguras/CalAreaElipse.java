@@ -12,8 +12,8 @@ package figurasgeometricas.AreaFiguras;
 public class CalAreaElipse implements FormaCalArea{
 
     @Override
-    public double area(double lado1, double lado2) {
-        return Math.PI*(lado1*lado2);
+    public double area(double arre[]) {
+        return Math.PI*(arre[0]*arre[1]);
     }
     
 }

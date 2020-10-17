@@ -11,26 +11,21 @@ import figurasgeometricas.AreaFiguras.CalAreaTrian;
  */
 public class TrianguloEqui extends FiguraGeometrica{
 
-    public TrianguloEqui(double lado_1, double lado_2,double dimensiones[]) {
-        super(lado_1, lado_2,dimensiones);
+    public TrianguloEqui(double dimensiones[]) {
+        super(dimensiones);
         calArea=new CalAreaTrian();
         calPerimetro=new CalPerimetroLineal();
 
     }
 
     @Override
-    public double getLado1() {
-        return lado_1;
+    public double[] getLado1() {
+        return dimensiones;
     }
 
     @Override
-    public void setLado1(double lado1) {
-        lado_1=lado1;
-    }
-
-    @Override
-    public double getLado2() {
-        return lado_2;
+    public void setLado1(double[] lado1) {
+        dimensiones=lado1;
     }
 
     @Override
@@ -39,7 +34,7 @@ public class TrianguloEqui extends FiguraGeometrica{
     }
     
     @Override
-    public void girar(char direccion) {
+    public void girar() {
         double lt=lado_1;
         lado_1=lado_2;
         lado_2=lt;
@@ -60,6 +55,11 @@ public class TrianguloEqui extends FiguraGeometrica{
     @Override
     public void mostrar() {
         System.out.println("triangulo Equilatero "+"lado: "+lado_1+" lado 2 "+lado_2+" posicion("+ubicacion.getX()+","+ubicacion.getY()+")"); 
+    }
+
+    @Override
+    public double getLado2() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

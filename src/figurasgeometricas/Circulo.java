@@ -16,20 +16,20 @@ import figurasgeometricas.AreaFiguras.CalAreaElipse;
  */
 public class Circulo extends FiguraGeometrica{
 
-    public Circulo(double lado_1, double lado_2,double dimensiones[]) {
-        super(lado_1, lado_2,dimensiones);
+    public Circulo(double dimensiones[]) {
+        super(dimensiones);
         calArea=new CalAreaElipse();
         calPerimetro=new CalPerimetroCirculo();
     }
 
     @Override
-    public double getLado1() {
-        return lado_1;
+    public double[] getLado1() {
+        return dimensiones;
     }
 
     @Override
-    public void setLado1(double lado1) {
-        lado_1=lado1;
+    public void setLado1(double[] lado1) {
+        dimensiones=lado1;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Circulo extends FiguraGeometrica{
    
 
     @Override
-    public void girar(char direccion) {
+    public void girar() {
         double lt=lado_1;
         lado_1=lado_2;
         lado_2=lt;

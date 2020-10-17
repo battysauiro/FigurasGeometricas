@@ -20,24 +20,24 @@ public abstract class FiguraGeometrica {
     protected Punto ubicacion;
     protected FormaCalArea calArea;
     protected FormaCalPerimetro calPerimetro;
-    public FiguraGeometrica(double lado_1,double lado_2,double dimensiones[]){
+    public FiguraGeometrica(double dimensiones[]){
         this.lado_1=lado_1;
         this.lado_2=lado_2;
         this.dimensiones=dimensiones;
         
     }
-    public abstract double getLado1();
-    public abstract void setLado1(double lado1);
+    public abstract double[] getLado1();
+    public abstract void setLado1(double lado1[]);
     public abstract double getLado2();
     public abstract void setLado2(double lado2);
 
     public double CalculoArea(){
-        return calArea.area(lado_1, lado_2);
+        return calArea.area(dimensiones);
     }
     public double CalculoPerimetro(){
         return calPerimetro.perimetro(dimensiones);
     }
-    public abstract void girar(char direccion);
+    public abstract void girar();
     public abstract void trasladar(Punto p);
     public abstract void escalar(double prop);
     public abstract void mostrar();

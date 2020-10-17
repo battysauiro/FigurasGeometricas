@@ -14,20 +14,20 @@ import figurasgeometricas.AreaFiguras.CalAreaTrian;
  */
 public class RomboRegular extends FiguraGeometrica{
 
-    public RomboRegular(double lado_1, double lado_2,double dimensiones[]) {
-        super(lado_1, lado_2,dimensiones);
+    public RomboRegular(double dimensiones[]) {
+        super(dimensiones);
         calArea=new CalAreaTrian();
         calPerimetro= new CalPerimetroLineal();
     }
 
     @Override
-    public double getLado1() {
-        return lado_1;
+    public double[] getLado1() {
+        return dimensiones;
     }
 
     @Override
-    public void setLado1(double lado1) {
-        lado_1=lado1;
+    public void setLado1(double[] lado1) {
+        dimensiones=lado1;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class RomboRegular extends FiguraGeometrica{
     }
 
     @Override
-    public void girar(char direccion) {
+    public void girar() {
         double lt=lado_1;
         lado_1=lado_2;
         lado_2=lt;

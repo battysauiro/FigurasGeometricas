@@ -16,7 +16,8 @@ public class CalPerimetroLineal implements FormaCalPerimetro{
     @Override
     public double perimetro(double[] dimensiones) {
         double perimetro=0;
-        for(double dim:dimensiones)perimetro+=dim;
+        for (int i = 2; i < dimensiones.length; i++) 
+                perimetro+=dimensiones[i];
         return perimetro;
     }
     
